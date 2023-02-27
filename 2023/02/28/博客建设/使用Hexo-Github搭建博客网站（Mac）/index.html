@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Hexo官方网址与文档官网：https:&#x2F;&#x2F;hexo.io&#x2F;官方文档：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Hexo+Github搭建博客网站（Mac）">
+<meta property="og:url" content="http://example.com/2023/02/28/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%EF%BC%88Mac%EF%BC%89/index.html">
+<meta property="og:site_name" content="积成博客">
+<meta property="og:description" content="Hexo官方网址与文档官网：https:&#x2F;&#x2F;hexo.io&#x2F;官方文档：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-02-27T22:45:11.000Z">
+<meta property="article:modified_time" content="2023-02-27T22:48:40.596Z">
+<meta property="article:author" content="积成">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2023/02/28/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%EF%BC%88Mac%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>使用Hexo+Github搭建博客网站（Mac） | 积成博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">积成博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">学不可以已</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/28/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%EF%BC%88Mac%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="积成">
+      <meta itemprop="description" content="一个不断学习者的小博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="积成博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用Hexo+Github搭建博客网站（Mac）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-28 06:45:11 / 修改时间：06:48:40" itemprop="dateCreated datePublished" datetime="2023-02-28T06:45:11+08:00">2023-02-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" itemprop="url" rel="index"><span itemprop="name">博客建设</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Hexo官方网址与文档"><a href="#Hexo官方网址与文档" class="headerlink" title="Hexo官方网址与文档"></a>Hexo官方网址与文档</h1><p>官网：<br><a target="_blank" rel="noopener" href="https://hexo.io/">https://hexo.io/</a><br>官方文档：<br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<span id="more"></span>
+<h1 id="工具下载和安装"><a href="#工具下载和安装" class="headerlink" title="工具下载和安装"></a>工具下载和安装</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>下载地址：<br><a target="_blank" rel="noopener" href="https://nodejs.org/dist/v18.14.2/node-v18.14.2.pkg">https://nodejs.org/dist/v18.14.2/node-v18.14.2.pkg</a></p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>在App Store中下载Xcode，附带Git</p>
+<h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p><code>node -v</code><br><code>npm -v</code><br><code>git --version</code></p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><code>npm install hexo-cli -g</code><br>验证<br><code>hexo -v</code></p>
+<h1 id="Github仓库搭建"><a href="#Github仓库搭建" class="headerlink" title="Github仓库搭建"></a>Github仓库搭建</h1><p>地址：<br><a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a><br>新建仓库：<br>仓库名：xxx.github.io<br>Public<br>Add a README file</p>
+<h1 id="SSH-keys生成与关联"><a href="#SSH-keys生成与关联" class="headerlink" title="SSH keys生成与关联"></a>SSH keys生成与关联</h1><p>终端，验证SSH是否已安装：<br><code>ssh</code><br>生成ssh文件：<br><code>ssh-keygen -t rsa -C &quot;Github注册时的邮件地址&quot;</code><br>四次enter键后完成<br>如果在整个过程中如果权限不足就切换管理员：<br><code>sudo su</code><br>公钥路径：<br>&#x2F;Users&#x2F;XXX&#x2F;.ssh&#x2F;id_rsa.pub<br>打开后全文复制<br>进入Github-右上角头像-Settings-SSH and GPG keys-New SSH key<br>Title任意，Key中粘贴id_rsa.pub全文<br>测试ssh是否绑定成功：<br><code>ssh -T git@github.com</code></p>
+<h1 id="本地博客生成"><a href="#本地博客生成" class="headerlink" title="本地博客生成"></a>本地博客生成</h1><p>本地新建文件夹，如<br>&#x2F;Users&#x2F;XXX下新建文件夹Blog<br>选中该文件夹，右键-option-新建位于文件夹位置的终端窗口<br>初始化hexo：<br><code>hexo init</code><br>生成：<br><code>hexo g</code><br>启动服务：<br><code>hexo s</code><br>localhost:4000可访问本地博客<br>Ctrl+C关闭</p>
+<h1 id="发布博客到互联网"><a href="#发布博客到互联网" class="headerlink" title="发布博客到互联网"></a>发布博客到互联网</h1><p>在Blog文件夹下找到_config.yml文件<br>在最后增加：<br><code>deploy:</code> <br>  <code>type: git</code><br>  <code>repo: 仓库地址</code><br>  <code>branch: main</code><br>冒号为英文冒号，后有一个空格，仓库地址在Github-仓库-code-https中找到<br>安装：<br><code>npm install hexo-deployer-git --save</code><br>生成：<br><code>hexo g</code><br>发布：<br><code>hexo d</code><br>验证账号：用户名为Github用户名，密码为令牌（Github-Developer Settings-personal access tokens，新建令牌，权限全选）</p>
+<h1 id="网站管理与维护"><a href="#网站管理与维护" class="headerlink" title="网站管理与维护"></a>网站管理与维护</h1><h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>域名解析：<br>cname www 记录值:xxx.github.io<br>A @ 记录值:ip<br>ip通过ping xxx.github.io获得<br>在Blog&#x2F;source文件夹下新建一个名为CNAME的文件，其中写入域名<br>然后进入github-仓库-settings-pages-Custom domain，输入域名，勾选Enforce HTTPS，然后Save</p>
+<h2 id="网站信息配置"><a href="#网站信息配置" class="headerlink" title="网站信息配置"></a>网站信息配置</h2><p>可在_config.yml中修改大部分的网站配置<br><code>title</code>  网站标题<br><code>subtitle</code>  网站副标题<br><code>description</code>  网站描述，主要用于SEO<br><code>keywords</code>  网站的关键词。支持多个关键词。<br><code>author</code>  博客作者的名字<br><code>language</code>  网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。<br><code>timezone</code>  网站时区。Hexo 默认使用电脑的时区。请参考 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</p>
+<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>next主题：<br>在Blog文件夹中打开终端：<br><code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code><br>在_config.yml中修改theme为next<br>进行本地预览：<br><code>hexo s</code><br>next主题的使用教程：<br><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">NexT 使用文档 (iissnan.com)</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/1f8107a8778c">hexo搭建个人博客–NexT主题优化 - 简书 (jianshu.com)</a></p>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>全文截断：</p>
+<!--more-->
+<p>tag格式：<br>categories格式：<br>新建文章：<br><code>hexo new 文章标题</code><br>生成页面：<br><code>hexo g</code><br>上传页面：<br><code>hexo d</code></p>
+<h2 id="添加标签页面"><a href="#添加标签页面" class="headerlink" title="添加标签页面"></a>添加标签页面</h2><p>新建页面tags：<br><code>hexo new page tags</code><br>在tags页面中增加：<br><code>type: &quot;tags&quot;</code><br>在next主题配置中添加 <code>tags</code> 到 <code>menu</code><br>然后 <code>hexo g &amp; hexo d</code></p>
+<h2 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h2><p>新建页面tags：<br><code>hexo new page categories</code><br>在tags页面中增加：<br><code>type: &quot;categories&quot;</code><br>在next主题配置中添加 <code>categories</code> 到 <code>menu</code><br>然后 <code>hexo g &amp; hexo d</code></p>
+<h2 id="添加关于页面"><a href="#添加关于页面" class="headerlink" title="添加关于页面"></a>添加关于页面</h2><p>新建页面about：<br><code>hexo new page about</code><br>在tags页面中增加：<br><code>type: &quot;about&quot;</code><br>在next主题配置中添加 <code>categories</code> 到 <code>menu</code><br>然后 <code>hexo g &amp; hexo d</code></p>
+<h2 id="备份与迁移"><a href="#备份与迁移" class="headerlink" title="备份与迁移"></a>备份与迁移</h2><p>需要备份和迁移的内容：</p>
+<ul>
+<li>_config.yml：站点配置</li>
+<li>package.json：说明使用那些包</li>
+<li>scaffolds：文章的模板</li>
+<li>source：自己写的博客文件</li>
+<li>themes：主题</li>
+<li>.gitignore：限定在提交的时候哪些文件可以忽略</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/02/27/%E6%B3%95%E5%BE%8B%E5%AE%9E%E5%8A%A1/%E4%BD%BF%E7%94%A8%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B%E8%AF%89%E8%AE%BC%E6%A1%88%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF/" rel="prev" title="使用关系型数据库建立诉讼案件管理系统的基本思路">
+      <i class="fa fa-chevron-left"></i> 使用关系型数据库建立诉讼案件管理系统的基本思路
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E5%AE%98%E6%96%B9%E7%BD%91%E5%9D%80%E4%B8%8E%E6%96%87%E6%A1%A3"><span class="nav-number">1.</span> <span class="nav-text">Hexo官方网址与文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">工具下载和安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-number">2.2.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81"><span class="nav-number">2.3.</span> <span class="nav-text">验证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">2.4.</span> <span class="nav-text">Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text">Github仓库搭建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH-keys%E7%94%9F%E6%88%90%E4%B8%8E%E5%85%B3%E8%81%94"><span class="nav-number">4.</span> <span class="nav-text">SSH keys生成与关联</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E7%94%9F%E6%88%90"><span class="nav-number">5.</span> <span class="nav-text">本地博客生成</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%88%B0%E4%BA%92%E8%81%94%E7%BD%91"><span class="nav-number">6.</span> <span class="nav-text">发布博客到互联网</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E7%AE%A1%E7%90%86%E4%B8%8E%E7%BB%B4%E6%8A%A4"><span class="nav-number">7.</span> <span class="nav-text">网站管理与维护</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A"><span class="nav-number">7.1.</span> <span class="nav-text">域名绑定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF%E9%85%8D%E7%BD%AE"><span class="nav-number">7.2.</span> <span class="nav-text">网站信息配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">7.3.</span> <span class="nav-text">修改主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">7.4.</span> <span class="nav-text">新建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%A0%87%E7%AD%BE%E9%A1%B5%E9%9D%A2"><span class="nav-number">7.5.</span> <span class="nav-text">添加标签页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2"><span class="nav-number">7.6.</span> <span class="nav-text">添加分类页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2"><span class="nav-number">7.7.</span> <span class="nav-text">添加关于页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%81%E7%A7%BB"><span class="nav-number">7.8.</span> <span class="nav-text">备份与迁移</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">积成</p>
+  <div class="site-description" itemprop="description">一个不断学习者的小博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:zh-xx@foxmail.com" title="E-Mail → mailto:zh-xx@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">积成</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
