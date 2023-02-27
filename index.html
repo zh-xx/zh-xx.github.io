@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="一个不断学习者的小博客">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="一个不断学习者的小博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="积成">
-<meta property="article:tag" content="法律,社会学,法律社会学,法务,律师,">
+<meta property="article:tag" content="法律,社会学,法律社会学,法务,律师">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/">
@@ -117,11 +117,6 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
         <li class="menu-item menu-item-tags">
 
     <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
@@ -135,6 +130,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
   </ul>
@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-27 13:40:58 / 修改时间：14:24:53" itemprop="dateCreated datePublished" datetime="2023-02-27T13:40:58+08:00">2023-02-27</time>
+              <time title="创建时间：2023-02-27 13:40:58 / 修改时间：21:48:22" itemprop="dateCreated datePublished" datetime="2023-02-27T13:40:58+08:00">2023-02-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -216,263 +216,15 @@
           <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在律师事务所或者公司中，法律人对于案件的管理通常走向两种不同的方向：</p>
 <ol>
 <li>专门的案件管理系统。大型法律人团队委托技术人员开发符合本所&#x2F;公司法律案件办理实际需要求的案件管理系统，其优点就在于这套系统针对于特定对象开发，能够满足特定对象的特定需求，如地产公司对于购房者群诉案件的集中化管理，大型非诉团队对于成员GTD的需求，但缺点就在于成本高、适用范围较窄，需求人员与技术人员需要多次反复的沟通磨合才能实现系统的最终落地。</li>
-<li>账本式的管理方式。小型的法律人团队，如果承接的案件数量较少，并行处理的案件不超过20个，则出于成本考虑，通常会选择使用Word、Excel等方式进行记录，甚至是使用纸质文档进行记录，笔者称这种案件管理方式为“账本式”。其优点在于方便快捷，在少数成员中方便传阅、修改和备份，缺点则是一旦案件数量增加就难以应对。</li>
-</ol>
-<p>处于中间地带的案件管理方式，都是这两种方式不同程度的组合。如：</p>
-<ol>
-<li>使用已有的案件管理系统：可以考虑使用一些已有的、经过市场验证的案件管理系统，这些系统可能会更适合小型律师团队的需求。此外，这些系统可能提供了一些标准的接口和API，可以方便地与其他软件和服务集成，使得团队内部的协同工作更加高效。</li>
-<li>利用云服务：可以考虑利用云服务来搭建一个基于云平台的案件管理系统，这种方式需要的初始投资较少，可以快速搭建系统并且免除运维负担。同时，云服务提供商通常会提供一些标准的模板和组件，可以大大缩短开发周期。</li>
-<li>使用低代码开发平台：可以考虑使用低代码开发平台，通过拖拽式的可视化操作和简单的编程语言来创建应用程序，可以大大降低开发成本和难度。此外，这种方式也能快速迭代和定制应用程序。</li>
-<li>外包开发：可以考虑将开发工作外包给专业的软件开发公司，这种方式可以节省开发成本，并且可以获取专业的开发技能和支持。外包公司通常会有丰富的经验和案例，可以更好地理解小型律师团队的需求，并提供定制化的开发服务。</li>
-</ol>
-<p>在这些选择中，如果团队可以给予一定的技术支持，选择使用关系型数据库建立诉讼案件管理系统，则能够不依托第三方平台管理和存储数据、更好地保证数据的自主性，同时可最大限度实现团队的定制化需求。</p>
-<h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>本文的目的在于，在诉讼案件管理系统的开发中：</p>
-<ol>
-<li>快速消除需求人员（律师、法务）与实现人员（技术人员）的沟通壁垒：开发案件管理系统的目的是为了更好地管理案件、提高工作效率和降低管理成本，因此需要将律师和法务对于案件管理的需求和技术人员对于开发实现的能力进行有效的沟通和协作。通过使用关系型数据库作为数据存储和管理的工具，可以建立一个标准的、可靠的数据模型，并为律师和法务提供简单易懂、易于操作的界面，消除双方之间的沟通壁垒。</li>
-<li>建立标准化的管理、数据思路，方便备份、迁移、拓展：利用关系型数据库来实现案件管理系统，可以规范化和统一管理案件数据，并确保数据的完整性和一致性。通过建立标准的数据模型，可以将不同案件之间的关联关系、事件流程等信息都记录下来，方便案件管理人员查看和分析。此外，使用关系型数据库也方便数据的备份和迁移，避免数据丢失和损坏，并为系统的拓展提供了良好的基础。</li>
-<li>便于进一步开发和集成：对于小型律师团队而言，大部分的案件管理系统都比较笨重、复杂，不太适合使用，因此，可以利用关系型数据库，自主开发一个简单易用的案件管理系统，这样可以便于进一步开发和集成其他相关系统，如OA系统，进一步提高工作效率。</li>
-<li>降低案件管理系统实现的成本：如果律所&#x2F;公司已经拥有服务器，那么使用关系型数据库实现案件管理系统的成本就会大大降低。因为关系型数据库可以直接在服务器上运行，而不需要专门的硬件设备。同时，通过使用开源的数据库软件，如MySQL、PostgreSQL等，也可以降低软件授权费用。</li>
-</ol>
-<h1 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h1><h2 id="明确需求"><a href="#明确需求" class="headerlink" title="明确需求"></a>明确需求</h2><h3 id="业务场景"><a href="#业务场景" class="headerlink" title="业务场景"></a>业务场景</h3><p>用于中小型律师&#x2F;法务团队，能够避免账本式管理所产生的效率低下、存储量小、管理量小的问题，同时也不必付出定制专门系统的高额开发、运维成本。<br>关系型数据库是开发案件管理系统的常用工具之一，也是业界广泛采用的技术。使用关系型数据库可以帮助团队轻松存储和管理大量的案件数据，而且关系型数据库有着良好的数据一致性和安全性保障，可以满足团队在数据存储和管理方面的需要。</p>
-<h3 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求"></a>功能需求</h3><p>该系统主要实现以下功能：</p>
-<ol>
-<li>案件信息管理<ol>
-<li>案件基本信息应包括案件类型、案件名称、案由、简介、阶段等。</li>
-<li>案件过程信息应包括案件阶段、诉请、金额、审理机构等。</li>
-<li>案件结果信息应包括结束时间、方式、内容等。</li>
-<li>案件执行履行信息应包括执行信息、执行结果、执行费用等。</li>
-<li>案件其他信息可以包括备注等。</li>
-</ol>
-</li>
-<li>文件管理功能：包括文件上传、下载、查看、删除、分类等。</li>
-<li>日程安排功能：包括提醒、日历、会议安排等。</li>
-<li>任务安排功能：包括任务分配、跟进、完成情况汇报等。</li>
-<li>报表功能：支持按时间、案件类型、案由等维度的统计分析。</li>
-<li>数据分析功能：支持案件类型、案由、地区、时段等多个维度的分析。</li>
-</ol>
-<h3 id="角色支持"><a href="#角色支持" class="headerlink" title="角色支持"></a>角色支持</h3><p>团队负责人和成员，都具有录入、更新、查询、报表的权限，但是负责人有删除的权限。<br>一种常见的做法是在数据库中设计一个名为 <code>**users**</code> 的表，用于存储系统中的用户信息。这个表可以包含一些基本信息，如用户名、密码、角色等。我们可以在这个表中添加一个字段 <code>**is_admin**</code> 用来标识该用户是否为系统的管理员。当该字段值为 <code>**1**</code> 时，表示该用户是负责人，具有删除权限；当该字段值为 <code>**0**</code> 时，表示该用户是普通成员，只有录入、更新、查询、报表的权限。<br>另外，为了更好地管理系统中的操作记录，可以在每个表中添加一些操作记录相关的字段，比如 <code>**created_by**</code>、<code>**created_at**</code>、<code>**updated_by**</code>、<code>**updated_at**</code>，分别表示记录创建者、创建时间、更新者、更新时间。这样可以方便地追踪记录的创建和修改历史。<br>对于权限控制，可以在应用程序中编写代码进行验证，比如在进行删除操作时判断当前用户是否为管理员。同时，也可以在数据库层面使用触发器等机制进行验证和限制，以保证数据的安全性和完整性。</p>
-<h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><p>根据需求分析结果，设计适合诉讼案件管理系统的数据库结构，包括表的设计、字段的定义、索引和约束等。这里仅针对字段设计和表关系提供基本思路。</p>
-<h3 id="表设计"><a href="#表设计" class="headerlink" title="表设计"></a>表设计</h3><h4 id="案件基本信息表"><a href="#案件基本信息表" class="headerlink" title="案件基本信息表"></a>案件基本信息表</h4><p>该表记录了案件的基本信息。<br>字段设计：</p>
-<ul>
-<li>案件编号（case_id）：案件的唯一标识，用于区分不同的案件。数据类型为字符型，长度为50，不允许为空。作为主键，且需要唯一性约束。在字段设计阶段设计为自动生成，并加上相应约束条件。<br>设计案件编号自动生成的规则，可以考虑使用组合字段的方式，例如：<br>1.  使用年份、涉案公司、案件类型等字段作为组合条件，生成唯一的案件编号；<br>2.  可以使用自增序列，每当新建一个案件时，自动递增序列值作为案件编号。<br>    假设我们使用以下规则来自动生成案件编号：<br>-   案件编号的前缀为“CAS”。<br>-   接下来是当前年份的后两位数字，例如2023年，则是“23”。<br>-   接下来是一个4位数的自增序列，从0001开始，每次新增案件时自动递增。<br>-   最终生成的案件编号格式为“CAS23-0001”。<br>    例如，如果我们新增一条案件记录，其自动生成的案件编号为“CAS23-0001”。接下来新增一条记录时，自动生成的案件编号为“CAS23-0002”。每次新增一条案件记录时，系统会自动计算并生成案件编号，以保证案件编号的唯一性。<br>具体哪种方案更适合，需要根据实际情况进行分析和选择。如果使用自增序列，需要在数据库中设置自增序列，并在程序中获取序列值并插入到案件基本信息表中。如果使用组合条件生成案件编号，可以在程序中进行生成并插入到表中。无论哪种方式，生成的案件编号需要保证唯一性和不可修改性。</li>
-<li>涉案公司（company）：与案件有关的公司名称。数据类型为字符型，长度为100，不允许为空。需要非空约束。后续通过组合框约束。</li>
-<li>涉案部门（department）：与案件有关的部门名称。数据类型为字符型，长度为100，允许为空。后续通过组合框约束。</li>
-<li>案件类型（case_type）：案件所属的类型，如民事案件、刑事案件等根据团队内部管控要求确定。数据类型为字符型，长度为50，允许为空。后续通过组合框约束。</li>
-<li>案件名称（case_name）：案件的名称。数据类型为字符型，长度为200，不允许为空。</li>
-<li>当事人（party）：案件涉及的当事人名称。数据类型为字符型，长度为200，允许为空。</li>
-<li>案由（cause）：案件的主要诉讼事由。数据类型为字符型，长度为500，允许为空。</li>
-<li>案件开始时间（start_time）：案件开始处理的时间。数据类型为日期型，不允许为空。需要非空约束。</li>
-<li>案件简介（description）：对案件的简要概括。数据类型为字符型，长度为1000，允许为空。</li>
-<li>案件当前状态（status）：案件目前所处的状态，如立案、审理中、执行中、已结案等。数据类型为字符型，长度为50，允许为空。</li>
-</ul>
-<h4 id="案件过程信息表"><a href="#案件过程信息表" class="headerlink" title="案件过程信息表"></a>案件过程信息表</h4><p>该表记录了案件的审理过程信息，包括了仲裁、劳动仲裁、一审、二审等阶段。<br>字段设计：</p>
-<ul>
-<li>过程编号（process_id）：过程信息的唯一标识，数据类型为整型，长度为11，自增长，不允许为空。</li>
-<li>案件编号（case_id）：关联到案件基本信息表中的案件编号，数据类型为整型，长度为11，不允许为空。</li>
-<li>审理阶段（stage）：案件当前所处的审理阶段，如一审、二审、再审等。数据类型为字符型，长度为50，允许为空。</li>
-<li>我方地位（our_position）：我方在案件中所处的地位，如原告、被告、第三人等。数据类型为字符型，长度为10，允许为空。</li>
-<li>原告&#x2F;申请人（plaintiff）：案件中的原告&#x2F;申请人，数据类型为字符型，长度为50，允许为空。</li>
-<li>被告&#x2F;被申请人（defendant）：案件中的被告&#x2F;被申请人，数据类型为字符型，长度为50，允许为空。</li>
-<li>请求事项（claims）：原告&#x2F;申请人在案件中提出的请求事项，数据类型为字符型，长度为500，允许为空。</li>
-<li>请求金额（amount）：原告&#x2F;申请人在案件中提出的请求金额，数据类型为浮点型，长度为10，允许为空。</li>
-<li>受理日期（acceptance_date）：法院受理案件的日期，数据类型为日期型，不允许为空。</li>
-<li>案号（case_number）：法院为案件分配的编号，数据类型为字符型，长度为50，允许为空。</li>
-<li>审理机构（court）：承办案件的审理机构，数据类型为字符型，长度为50，允许为空。</li>
-<li>开庭时间（court_date）：案件开庭时间，数据类型为日期型，允许为空。</li>
-<li>开庭地点（court_location）：案件开庭地点，数据类型为字符型，长度为100，允许为空。</li>
-<li>裁判人员及联系方式（judges）：审理案件的裁判人员及联系方式，数据类型为字符型，长度为200，允许为空。</li>
-<li>进展情况（progress）：案件的进展情况，数据类型为字符型，长度为500，允许为空。</li>
-<li>我方代理（our_lawyer）：我方在案件中的代理人，数据类型为字符型，长度为50，允许为空。</li>
-<li>代理费用（lawyer_fee）：代理人所收取的费用，数据类型为浮点型，长度为10，允许为空。</li>
-</ul>
-<h4 id="案件结果信息"><a href="#案件结果信息" class="headerlink" title="案件结果信息"></a>案件结果信息</h4><ul>
-<li>结果编号（result_id）：结果记录的唯一标识符，数据类型为整型，长度为11，主键，不允许为空。</li>
-<li>案件编号（case_id）：关联到案件基本信息表中的案件编号，数据类型为整型，长度为11，外键，不允许为空。</li>
-<li>是否结束（is_finished）：标识案件是否已经结束，数据类型为布尔型，长度为1，允许为空。</li>
-<li>结束时间（finish_time）：记录案件结束的时间，数据类型为日期型，长度为10，允许为空。</li>
-<li>结束方式（finish_type）：记录案件结束的方式，如判决、调解、撤诉等，数据类型为字符型，长度为50，允许为空。</li>
-<li>案件实质结果（case_result）：记录案件的实质结果，如原告胜诉、被告败诉等，数据类型为字符型，长度为50，允许为空。</li>
-<li>我方履行内容（our_performance）：记录我方应当履行的内容，数据类型为字符型，长度为500，允许为空。</li>
-<li>对方履行内容（opponent_performance）：记录对方应当履行的内容，数据类型为字符型，长度为500，允许为空。</li>
-<li>诉讼费（litigation_fee）：记录案件产生的诉讼费用，数据类型为浮点型，长度为10，允许为空。</li>
-<li>诉讼费承担主体（fee_payer）：记录诉讼费用的承担主体，如原告、被告、双方各自承担等，数据类型为字符型，长度为50，允许为空。</li>
-<li>起诉请求金额（plaintiff_claim_amount）：从我方立场计算的起诉请求金额，数据类型为浮点型，长度为10，允许为空。</li>
-<li>起诉追偿金额（plaintiff_recover_amount）：从我方立场计算的起诉追偿金额，数据类型为浮点型，长度为10，允许为空。</li>
-<li>被诉请求金额（defendant_claim_amount）：从我方立场计算的被诉请求金额，数据类型为浮点型，长度为10，允许为空。</li>
-<li>被诉减损金额（defendant_reduce_amount）：从我方立场计算的被诉减损金额，数据类型为浮点型，长度为10，允许为空。<br>请注意，后四项为计算起诉追回率和被诉减损率设计。</li>
-</ul>
-<h4 id="执行履行信息表"><a href="#执行履行信息表" class="headerlink" title="执行履行信息表"></a>执行履行信息表</h4><ul>
-<li>执行编号（execution_id）：执行信息的唯一标识，采用自增长的方式生成。数据类型为整型，长度为10，不允许为空。</li>
-<li>案件编号（case_id）：与案件基本信息表中的案件编号关联，表示该执行信息所属的案件。数据类型为整型，长度为10，不允许为空。</li>
-<li>执行方式（execution_method）：表示执行的方式，如强制执行、自愿履行等。数据类型为字符型，长度为50，允许为空。</li>
-<li>执行内容（execution_content）：表示执行的内容，如查封、扣押、拍卖等。数据类型为字符型，长度为50，允许为空。</li>
-<li>执行日期（execution_date）：表示执行的日期，数据类型为日期型，不允许为空。</li>
-<li>执行法院（execution_court）：表示执行所在的法院，数据类型为字符型，长度为50，允许为空。</li>
-<li>执行法官及联系方式（execution_judge_contact）：表示执行法官的姓名及联系方式，数据类型为字符型，长度为100，允许为空。</li>
-<li>是否执行完毕（is_finished）：表示该执行信息是否已经执行完毕，数据类型为布尔型，不允许为空。<br>该表与其他表</li>
-</ul>
-<h4 id="备注与附件管理表"><a href="#备注与附件管理表" class="headerlink" title="备注与附件管理表"></a>备注与附件管理表</h4><ul>
-<li>备注编号（note_id）：备注的唯一编号，作为主键，数据类型为整型，长度为11，不允许为空。</li>
-<li>案件编号（case_id）：备注所属的案件编号，作为外键与案件基本信息表关联，数据类型为整型，长度为11，不允许为空。</li>
-<li>备注内容（note_content）：备注的具体内容，数据类型为文本型，长度为不超过1000个字符，不允许为空。</li>
-<li>备注人（note_person）：添加备注的人员姓名，数据类型为字符型，长度为50，不允许为空。</li>
-<li>备注时间（note_time）：添加备注的时间，数据类型为日期时间型，不允许为空。</li>
-<li>附件编号（attachment_id）：附件的唯一编号，作为主键，数据类型为整型，长度为11，不允许为空。</li>
-<li>附件名称（attachment_name）：附件的名称，数据类型为字符型，长度为100，不允许为空。</li>
-<li>附件类型（attachment_type）：附件的类型，如图片、文档等，数据类型为字符型，长度为50，不允许为空。</li>
-<li>附件路径（attachment_path）：附件的存储路径，数据类型为字符型，长度为255，不允许为空。</li>
-<li>上传人（upload_person）：上传附件的人员姓名，数据类型为字符型，长度为50，不允许为空。</li>
-<li>上传时间（upload_time）：上传附件的时间，数据类型为日期时间型，不允许为空。</li>
-</ul>
-<h4 id="案件日程信息表"><a href="#案件日程信息表" class="headerlink" title="案件日程信息表"></a>案件日程信息表</h4><ul>
-<li>日程编号（schedule_id）：日程的唯一标识，数据类型为整型，长度为11，不允许为空。</li>
-<li>案件编号（case_id）：与该日程相关的案件的唯一标识，数据类型为整型，长度为11，不允许为空。</li>
-<li>日程类型（schedule_type）：日程的类型，如庭审、调解等，数据类型为字符型，长度为50，允许为空。</li>
-<li>开始时间（start_time）：日程的开始时间，数据类型为时间型，不允许为空。</li>
-<li>结束时间（end_time）：日程的结束时间，数据类型为时间型，允许为空。</li>
-<li>日程地点（location）：日程的地点，数据类型为字符型，长度为200，允许为空。</li>
-<li>参与人员（participants）：与该日程相关的人员，数据类型为字符型，长度为500，允许为空。</li>
-<li>是否已完成（is_completed）：该日程是否已完成，数据类型为布尔型，不允许为空。</li>
-<li>备注（remark）：对该日程的备注信息，数据类型为字符型，长度为500，允许为空。</li>
-</ul>
-<h4 id="任务安排表（可选）"><a href="#任务安排表（可选）" class="headerlink" title="任务安排表（可选）"></a>任务安排表（可选）</h4><ul>
-<li>任务编号（task_id）：任务的唯一标识符，数据类型为整型，长度为11，不允许为空。</li>
-<li>任务名称（task_name）：任务的名称或标题，数据类型为字符型，长度为100，不允许为空。</li>
-<li>任务描述（task_description）：任务的详细描述信息，数据类型为文本型，不限长度，允许为空。</li>
-<li>任务创建人（created_by）：创建该任务的人员，数据类型为字符型，长度为50，不允许为空。</li>
-<li>任务负责人（assigned_to）：负责完成该任务的人员，数据类型为字符型，长度为50，不允许为空。</li>
-<li>任务创建时间（created_time）：任务的创建时间，数据类型为日期型，不允许为空。</li>
-<li>任务截止时间（due_time）：任务的截止完成时间，数据类型为日期型，允许为空。</li>
-<li>任务状态（status）：任务的当前状态，如待办、已完成、已取消等，数据类型为字符型，长度为50，不允许为空。</li>
-<li>任务优先级（priority）：任务的优先级，如高、中、低等，数据类型为字符型，长度为20，不允许为空。</li>
-<li>任务备注（remark）：对任务的补充说明或备注信息，数据类型为文本型，不限长度，允许为空。</li>
-</ul>
-<h4 id="表关系设计"><a href="#表关系设计" class="headerlink" title="表关系设计"></a>表关系设计</h4><ul>
-<li>案件基本信息表与案件过程信息表为一对多关系，一个案件基本信息可以对应多个案件过程信息；</li>
-<li>案件基本信息表与执行履行信息表为一对一关系，一个案件基本信息对应一个执行履行信息；</li>
-<li>执行履行信息表与案件结果信息表为一对一关系，一个执行履行信息对应一个案件结果信息；</li>
-<li>案件基本信息表与备注附件管理表为一对一关系，一个案件基本信息对应一个备注附件管理表；</li>
-<li>案件基本信息表与案件日程信息表为一对多关系，一个案件基本信息可以对应多个案件日程信息；</li>
-<li>案件基本信息表与任务安排表为一对多关系，一个案件基本信息可以对应多个任务安排。</li>
-</ul>
-<h2 id="数据库建立与操作"><a href="#数据库建立与操作" class="headerlink" title="数据库建立与操作"></a>数据库建立与操作</h2><p>使用数据库管理软件，创建相应的数据库和数据表，并进行数据录入和数据初始化操作。<br>如果选择 MySQL 作为数据库，那么接下来需要进行以下步骤：</p>
-<ol>
-<li>安装 MySQL 数据库软件：首先需要在计算机上安装 MySQL 数据库软件，在 MySQL 官网上下载适合操作系统的安装包，然后按照官方的指示进行安装即可。</li>
-<li>创建数据库：在 MySQL 中，可以使用 <code>CREATE DATABASE</code> 语句来创建一个新的数据库，例如，可以使用以下语句创建一个名为 <code>legal_case</code> 的数据库：<br><code>CREATE DATABASE legal_case;</code></li>
-<li>创建数据表：在 MySQL 中，可以使用 <code>CREATE TABLE</code> 语句来创建一个新的数据表，根据之前设计的字段，可以使用以下语句创建一个名为 <code>case_info</code> 的案件基本信息表：<br><code>CREATE TABLE case_info (     case_id INT PRIMARY KEY,     case_name VARCHAR(100) NOT NULL,     case_type VARCHAR(50) NOT NULL,     plaintiff VARCHAR(50) NOT NULL,     defendant VARCHAR(50) NOT NULL,     case_description TEXT,     create_time DATETIME NOT NULL,     update_time DATETIME );</code><br>类似地，创建其他的数据表，例如案件过程信息表、案件结果信息表等。</li>
-<li>设计表关系：根据之前的设计，案件基本信息表与其他数据表存在一对多或多对多的关系，在表设计时使用外键来建立这些关系，例如，可以使用以下语句在案件过程信息表中创建一个指向案件基本信息表的外键：<br><code>ALTER TABLE case_process_info ADD CONSTRAINT fk_case_id FOREIGN KEY (case_id) REFERENCES case_info(case_id);</code><br>类似地，在其他数据表中使用外键来建立表之间的关系。</li>
-<li>插入数据：在表创建完成后，使用 <code>INSERT INTO</code> 语句来向表中插入数据，例如，可以使用以下语句向案件基本信息表中插入一条数据：<br><code>INSERT INTO case_info (case_id, case_name, case_type, plaintiff, defendant, case_description, create_time) VALUES (1, &#39;案件1&#39;, &#39;民事案件&#39;, &#39;甲方&#39;, &#39;乙方&#39;, &#39;这是一起民事纠纷案件&#39;, NOW());</code><br>类似地，向其他数据表中插入数据。</li>
-<li>查询数据：在数据表中插入数据后，使用 <code>SELECT</code> 语句来查询数据，例如，可以使用以下语句查询案件基本信息表中所有的数据：<br> <code>SELECT * FROM case_info;</code></li>
-<li>继续使用UPDATE 和 DELETE 语句来完成数据的更新和删除，以确保数据的准确性和完整性。</li>
-</ol>
-<h2 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h2><p>接下来进行功能实现阶段，以便对数据库进行更加方便和灵活的操作。根据自己的需求和技术水平选择不同的开发语言和框架来完成应用程序的开发，例如使用 Python 的 Django 或 Flask 框架，或者使用 Java 的 Spring 框架等。<br>根据开发人员的技术能力，选择不同的方式实现诉讼案件管理管理的功能，以满足法律人士的实际需要求。<br>但至少需要实现下面这些功能：</p>
-<h3 id="基本数据的增删改"><a href="#基本数据的增删改" class="headerlink" title="基本数据的增删改"></a>基本数据的增删改</h3><p>通过窗体可以方便地对数据库中所有表中的数据进行操作。以下是基本的思路：</p>
-<ol>
-<li>新建数据：在窗体中创建表单或者对话框，让用户输入需要添加的数据。收集完用户的输入后，调用数据库 API 将数据插入到相应的表中，完成新建操作。   </li>
-<li>更新数据：在窗体中创建一个表格或者列表显示数据库中的数据，当用户选择一行数据时，在另一个窗体中打开一个表单或者对话框，显示选定数据的详细信息，允许用户修改。在表单或对话框中，可以使用数据绑定或手动获取数据并更新到数据库中。</li>
-<li>删除数据：在窗体中创建一个表格或者列表显示数据库中的数据，当用户选择一行数据时，弹出对话框询问是否确认删除。如果用户确认删除，调用数据库 API 删除选中的行数据。<br>在窗体中，可以使用控件绑定数据，比如数据网格、文本框、下拉列表等控件，方便用户输入和修改数据。可以使用数据验证和数据格式化来保证数据的正确性和可读性。同时，应该注意保护数据库的安全性，比如对敏感数据进行加密、限制用户的访问权限等措施。<br>在各个表的数据操作中，顺序应为：</li>
-<li>在案件基本信息表录入案件基本信息后才可以进行后续所有表的数据操作；</li>
-<li>后续所有表中的数据录入都是可以同步进行的，无先后顺序要求（可选择案件结果信息表和执行履行信息表为最后更新）。</li>
-</ol>
-<h3 id="多种信息和数据的计算"><a href="#多种信息和数据的计算" class="headerlink" title="多种信息和数据的计算"></a>多种信息和数据的计算</h3><p>通过查询计算出起诉追回率及金额、被诉减损率及金额、所有案件数量、以是否结束为标准的案件数量统计、以开始或者结束年份为标准的案件数量统计、按照公司为标准的案件数量统计、按照案由为标准的案件数量统计、历年执行案件数量等。<br>以上这些根据组织的实际需求设计相应的查询。<br>一些基本的思路：</p>
-<ol>
-<li>起诉追回率及金额、被诉减损率及金额：可以通过统计案件的请求金额、追回金额、被诉金额、减损金额等字段，计算出相应的比率和金额。这些可以通过 SQL 查询语句来实现。<br><code>SELECT COUNT(CASE WHEN 起诉追回金额 &gt; 0 THEN 1 END) / COUNT(*) AS &#39;起诉追回率&#39; FROM 案件结果信息表 WHERE 案件编号 = &#39;xxx&#39;;</code></li>
-<li>所有案件数量、以是否结束为标准的案件数量统计、以开始或者结束年份为标准的案件数量统计、按照公司为标准的案件数量统计、按照案由为标准的案件数量统计：这些数据可以通过 SQL 查询语句中的 COUNT() 函数和 GROUP BY 子句来实现。</li>
-<li>历年执行案件：可以通过查询案件执行情况表中的数据，并按照执行日期来排序，从而得到历年的执行案件数量和金额。<br>以上只是一些基本的思路，具体实现需要根据实际情况进行调整。</li>
-</ol>
-<h3 id="报表输出"><a href="#报表输出" class="headerlink" title="报表输出"></a>报表输出</h3><p>使用报表可以方便地实现各种数据统计和可视化展示。可以使用各种报表工具（如Crystal Reports、JasperReports、Power BI、Tableau等）来创建报表。这些工具提供了各种数据可视化和报表设计功能，使用户可以快速、轻松地创建各种类型的报表。用户可以选择合适的报表类型、添加必要的数据字段和图形、应用筛选条件、设置报表样式等。通过报表，用户可以快速了解公司的各种数据信息，例如案件数量、执行情况、起诉追回率、被诉减损率等。<br>报表对于诉讼案件管理系统非常重要。通过使用报表，我们可以方便地对系统中的数据进行统计和分析，从而更好地了解和掌握诉讼案件的情况。下面是报表对诉讼案件管理系统的几个重要作用：</p>
-<ol>
-<li>提供数据可视化：通过报表的形式，将数据以图表或表格的形式呈现出来，让用户可以通过视觉直观地了解各项指标的情况，方便用户快速了解数据背后的含义。</li>
-<li>方便数据分析：在诉讼案件管理系统中，大量的数据需要被分析和比较。通过报表的方式，用户可以方便地对数据进行分组、排序和筛选，进而进行深入的数据分析。</li>
-<li>支持管理决策：对于诉讼案件管理系统的管理者而言，通过定期生成各种报表，可以对公司的经营情况进行全面、深入的了解，并基于这些数据作出决策。</li>
-<li>减轻工作负担：在没有报表的情况下，用户可能需要手动进行数据的统计、计算和分析，而且需要花费大量的时间和精力。而通过报表，用户只需要几步操作即可获得所需的数据，大大减轻了工作负担。<br>对于报表的需求主要集中在以下两方面：</li>
-</ol>
-<h4 id="个案详情呈现"><a href="#个案详情呈现" class="headerlink" title="个案详情呈现"></a>个案详情呈现</h4><p>对于个案全过程展示的报表，可将某个案件的所有信息汇总在一起，如起诉内容、被诉内容、当事人信息、案件进展、案件费用等等，并以时间轴的形式展示，以便更好地跟踪和记录案件的发展过程。可以使用SQL语句的联结（Join）功能，将多个表中同一个案件编号的数据通过某个或某些字段进行关联，实现数据的统一查询。</p>
-<h4 id="案件综合呈现"><a href="#案件综合呈现" class="headerlink" title="案件综合呈现"></a>案件综合呈现</h4><p>对于不同维度的对大量案件的数据呈现，可通过数据可视化工具来制作适合的图表和报表。例如，通过饼图或条形图展示公司维度下的案件数量占比，通过折线图或柱状图展示不同年份下的案件数量和结案情况，通过交叉表格展示不同案由的案件数量和结案情况等等。通过这些图表和报表，可以更好地理解和分析案件数据，为业务决策提供支持和参考。<br>这一部分的报表需要结合组织的需求进行设计，并且由于各表字段的完整性，这部分的需求可以随时进行修改，满足不同维度的数据分析需要。具体可参照前文的“多种信息和数据的计算”。</p>
-<h3 id="案件数据分析"><a href="#案件数据分析" class="headerlink" title="案件数据分析"></a>案件数据分析</h3><h3 id="其它功能"><a href="#其它功能" class="headerlink" title="其它功能"></a>其它功能</h3><ol>
-<li>数据增删改接入OA系统表单：将诉讼案件管理系统与企业内部的OA系统集成，将一些数据增删改操作接入OA系统表单中，以便更好地支持企业内部的业务流程。</li>
-<li>报表接入OA：将生成的报表接入OA系统中，以便员工可以在OA系统中查看和下载这些报表。可以考虑将报表作为OA系统中的一个功能菜单项，或者在OA系统中生成一个链接，直接跳转到诉讼案件管理系统中的报表界面。</li>
-<li>日程和任务与办公平台对接：将诉讼案件管理系统的日程和任务功能与企业内部的办公平台（如微信企业号、钉钉等）对接，以便员工可以在办公平台中查看和管理诉讼案件管理系统中的日程和任务。可以考虑将日程和任务生成一个链接，直接跳转到企业内部的办公平台中的日程和任务界面。</li>
-<li>其他建议：在实现诉讼案件管理系统时，还应该注意以下几点：</li>
-</ol>
-<ul>
-<li>数据安全：在设计和实现系统时，应该考虑数据的安全性，例如加密存储用户密码、限制数据访问权限等。</li>
-<li>用户友好性：系统的界面应该尽量简洁、易用，方便用户进行操作。</li>
-<li>可扩展性：系统应该具有一定的可扩展性，以便在未来进行功能的升级和扩展。</li>
-<li>数据可视化：除了报表功能外，还可以考虑使用数据可视化的方式呈现数据，例如使用图表、地图等形式展示数据，提升数据分析的效果和效率。</li>
-</ul>
-<h2 id="测试和部署"><a href="#测试和部署" class="headerlink" title="测试和部署"></a>测试和部署</h2><p>对应用程序进行测试和优化，确保系统的性能和稳定性，并将其部署到实际环境中使用。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/26/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="积成">
-      <meta itemprop="description" content="一个不断学习者的小博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="积成博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/02/26/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-02-26 11:42:42" itemprop="dateCreated datePublished" datetime="2023-02-26T11:42:42+08:00">2023-02-26</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<li>账本式的管理方式。小型的法律人团队，如果承接的案件数量较少，并行处理的案件不超过20个，则出于成本考虑，通常会选择使用Word、Excel等方式进行记录，甚至是使用纸质文档进行记录，笔者称这种案件管理方式为“账本式”。其优点在于方便快捷，在少数成员中方便传阅、修改和备份，缺点则是一旦案件数量增加就难以应对。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/27/%E4%BD%BF%E7%94%A8%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B%E8%AF%89%E8%AE%BC%E6%A1%88%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -553,20 +305,29 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
         <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:zh-xx@foxmail.com" title="E-Mail → mailto:zh-xx@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
 
 
 
@@ -619,7 +380,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
