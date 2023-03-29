@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="阅读前的重要提醒： 本指南基于ChatGPT3.5在2023年3月15日前的版本制作。 律师&#x2F;法务在使用ChatGPT中所获得的答案都可能存在错误（特别是法律规范检索），请将ChatGPT作为工作、学习的辅助工具，请勿完全依赖ChatGPT。 请使用文明礼貌的语言向ChatGPT进行提问。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT提问指南：如何利用AI提高法律服务效率">
+<meta property="og:url" content="http://example.com/2023/03/29/ChatGPT/ChatGPT%E6%8F%90%E9%97%AE%E6%8C%87%E5%8D%97%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8AI%E6%8F%90%E9%AB%98%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%95%88%E7%8E%87/index.html">
+<meta property="og:site_name" content="积成博客">
+<meta property="og:description" content="阅读前的重要提醒： 本指南基于ChatGPT3.5在2023年3月15日前的版本制作。 律师&#x2F;法务在使用ChatGPT中所获得的答案都可能存在错误（特别是法律规范检索），请将ChatGPT作为工作、学习的辅助工具，请勿完全依赖ChatGPT。 请使用文明礼貌的语言向ChatGPT进行提问。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-29T12:42:21.000Z">
+<meta property="article:modified_time" content="2023-03-29T12:44:50.918Z">
+<meta property="article:author" content="积成">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="提问指南">
+<meta property="article:tag" content="法律服务">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2023/03/29/ChatGPT/ChatGPT%E6%8F%90%E9%97%AE%E6%8C%87%E5%8D%97%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8AI%E6%8F%90%E9%AB%98%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%95%88%E7%8E%87/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>ChatGPT提问指南：如何利用AI提高法律服务效率 | 积成博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">积成博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">学不可以已</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/29/ChatGPT/ChatGPT%E6%8F%90%E9%97%AE%E6%8C%87%E5%8D%97%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8AI%E6%8F%90%E9%AB%98%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%95%88%E7%8E%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="积成">
+      <meta itemprop="description" content="一个不断学习者的小博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="积成博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ChatGPT提问指南：如何利用AI提高法律服务效率
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-03-29 20:42:21 / 修改时间：20:44:50" itemprop="dateCreated datePublished" datetime="2023-03-29T20:42:21+08:00">2023-03-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ChatGPT/" itemprop="url" rel="index"><span itemprop="name">ChatGPT</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="阅读前的重要提醒："><a href="#阅读前的重要提醒：" class="headerlink" title="阅读前的重要提醒："></a>阅读前的重要提醒：</h1><ol>
+<li>本指南基于ChatGPT3.5在2023年3月15日前的版本制作。</li>
+<li>律师&#x2F;法务在使用ChatGPT中所获得的答案都可能存在错误（特别是法律规范检索），请将ChatGPT作为工作、学习的辅助工具，请勿完全依赖ChatGPT。</li>
+<li>请使用文明礼貌的语言向ChatGPT进行提问。<span id="more"></span></li>
+</ol>
+<h1 id="一、关于本指南"><a href="#一、关于本指南" class="headerlink" title="一、关于本指南"></a>一、关于本指南</h1><h2 id="（一）什么是ChatGPT"><a href="#（一）什么是ChatGPT" class="headerlink" title="（一）什么是ChatGPT"></a>（一）什么是ChatGPT</h2><p>ChatGPT是一种基于人工智能的自然语言处理系统，它可以为用户提供智能问答和自动生成文本的功能。作为一种高度先进的语言模型，ChatGPT已经在各个领域得到了广泛的应用，包括自然语言理解、机器翻译、文本生成等。在不同的应用场景下，ChatGPT都能够为用户提供准确、高效、个性化的服务，并帮助他们快速解决各种问题。</p>
+<h2 id="（二）ChatGPT可以为律师-x2F-法务工作提供什么帮助"><a href="#（二）ChatGPT可以为律师-x2F-法务工作提供什么帮助" class="headerlink" title="（二）ChatGPT可以为律师&#x2F;法务工作提供什么帮助"></a>（二）ChatGPT可以为律师&#x2F;法务工作提供什么帮助</h2><p>律师和法务工作者可以使用ChatGPT来快速查找法律文献和案例、自动生成法律文件和协议的初稿、快速解决咨询问题以及对客户需求进行聚合分析等，让律师和法务工作者在工作中更加高效和精准，为客户提供更好的服务。</p>
+<h2 id="（三）本指南的目的"><a href="#（三）本指南的目的" class="headerlink" title="（三）本指南的目的"></a>（三）本指南的目的</h2><p>由于ChatGPT的回答具有开放性和发散性，律师和法务工作者可能会遇到某些问题，如无法准确找到所需的信息或无法理解其回答。因此，本文档的目的是提供针对性的提问指南，帮助律师和法务工作者更好地利用ChatGPT，更快速地获取准确的答案。这些指南旨在提供提问的类型和示例，以便提问者准确地表述问题、避免歧义、调整输入内容以提高ChatGPT回答的准确性等，以充分利用ChatGPT，提供更加高效和精准的法律服务。</p>
+<h1 id="二、提问前的准备"><a href="#二、提问前的准备" class="headerlink" title="二、提问前的准备"></a>二、提问前的准备</h1><h2 id="（一）ChatGPT的功能与限制"><a href="#（一）ChatGPT的功能与限制" class="headerlink" title="（一）ChatGPT的功能与限制"></a>（一）ChatGPT的功能与限制</h2><p>ChatGPT能够自动回答人类的自然语言问题，并生成具有逻辑性和连贯性的语言文本。通过深度学习和更广泛的文本库数据，ChatGPT的表现不断改进，功能也得到不断扩展。但同时，ChatGPT也存在一些限制和潜在的问题，这些需要在提问前被充分认识到。</p>
+<h3 id="ChatGPT的功能："><a href="#ChatGPT的功能：" class="headerlink" title="ChatGPT的功能："></a>ChatGPT的功能：</h3><ol>
+<li>语言理解：ChatGPT不仅可以回答问题，还能够理解人类语言背后的逻辑结构，理解上下文的信息，并进行情感表达。</li>
+<li>文字生成：ChatGPT可以自动生成语言文本，包括但不限于文章、评论、新闻、博客、小说、诗歌等，并且通常在文本质量上表现出色，多次连续生成文本的成功率也会不断提升。</li>
+<li>知识总结：ChatGPT可以汇总大量的信息、数据和文献，帮助用户总结和了解特定领域的知识，并提供建议。</li>
+</ol>
+<h3 id="ChatGPT的限制："><a href="#ChatGPT的限制：" class="headerlink" title="ChatGPT的限制："></a>ChatGPT的限制：</h3><ol>
+<li>训练数据：ChatGPT的回答很大程度上取决于其所接受的训练数据质量和覆盖范围，如果训练数据中存在偏差，模型将会出现错误的结果。GPT3.5的数据截止时间为2021年，因此其回答的内容与现在的时间有一定的出入，这种情况在GPT4和New Bing中改善了很多。</li>
+<li>知识遗漏：ChatGPT无法从社交情境中获得的知识，也无法从个人对话中的语言句式中获得知识。</li>
+<li>逻辑结构：ChatGPT能够识别并理解上下文线，但缺乏逻辑推理，导致在某些情况下它所产生的回复显得逻辑不清，甚至毫无逻辑根据。</li>
+<li>质量保障：ChatGPT的产出文本可能存在错误，尤其是涉及敏感和风险控制问题的内容时，需要进行仔细的审核和检查。</li>
+</ol>
+<h2 id="（二）制定具体的问题并尽可能明确"><a href="#（二）制定具体的问题并尽可能明确" class="headerlink" title="（二）制定具体的问题并尽可能明确"></a>（二）制定具体的问题并尽可能明确</h2><p>制定具体、明确的问题是获取准确答案的关键。提问者需要了解需要的信息、提供详细上下文信息、避免使用含糊不清的词语、注意问题的语言和细节、并尝试自己回答问题，以制定具体明确的问题。<br>首先，提问者需要明确问题的范围和目标，确定需要哪些类型的信息，需要使用相关的关键字和专业术语以便更好地提问。<br>其次，提问者需要提供详细的上下文信息。需要清晰地描述所涉及的背景和细节，以使ChatGPT能够更好的理解问题。例如，在法律咨询中，需要描述具体的案件、诉求和相关的法律条款。<br>第三，提问者需要避免使用模糊、不确定或含糊不清的词语。直接提出需要解决的问题，并明确该问题的所涉及的关键内容。<br>第四，提问者需要注意问题的语言和细节。问题的语言应恰当、专业，避免语法和拼写错误。在表述问题时，要遵循专业的、文明礼貌的语言规范。<br>最后，提问者可以尝试自己回答问题。这有助于更清晰地表达问题和更好地理解ChatGPT提供的答案。在提出问题之前，提问者可以思考想要解决的问题，并构思一定的方案，以保证作出问题的陈述更加清楚明白。<br>在制定问题的过程中，提问者需要遵循上述建议，从而制定具体、明确的问题，进而更好地实现ChatGPT协助。</p>
+<h1 id="三、提问的流程"><a href="#三、提问的流程" class="headerlink" title="三、提问的流程"></a>三、提问的流程</h1><h2 id="（一）注册和登录ChatGPT账号"><a href="#（一）注册和登录ChatGPT账号" class="headerlink" title="（一）注册和登录ChatGPT账号"></a>（一）注册和登录ChatGPT账号</h2><p>略</p>
+<h2 id="（二）选择合适的模型和设置参数"><a href="#（二）选择合适的模型和设置参数" class="headerlink" title="（二）选择合适的模型和设置参数"></a>（二）选择合适的模型和设置参数</h2><p>首选GPT4和New Bing，不能低于GPT3.5。</p>
+<h2 id="（三）输入问题并等待模型生成答案"><a href="#（三）输入问题并等待模型生成答案" class="headerlink" title="（三）输入问题并等待模型生成答案"></a>（三）输入问题并等待模型生成答案</h2><p>当使用ChatGPT或其他自然语言处理模型（NLP）解答问题时，一般需要经过以下步骤：</p>
+<ol>
+<li>输入问题：在模型的输入框中输入所要解答的问题。</li>
+<li>文本预处理：模型对输入的问题进行文本预处理，一般会删除停用词、标点符号、特殊字符等，并将语句转换成数字矩阵，以便模型进行计算和分析。</li>
+<li>模型运算：模型会针对输入的问题进行内部运算，使用之前学习的语言知识，寻找匹配度最高的答案，或是从已有语言材料中进行概括得出回答。</li>
+<li>输出答案：模型会返回一个或多个可能性回答。提问者需要对这些答案进行审查，判断哪一个或哪些最符合需求或期望。<br>简言之，<strong>输入问题后等待答案生成</strong>。</li>
+</ol>
+<h2 id="（四）评估答案的质量并进一步完善问题"><a href="#（四）评估答案的质量并进一步完善问题" class="headerlink" title="（四）评估答案的质量并进一步完善问题"></a>（四）评估答案的质量并进一步完善问题</h2><p>得到初步答案后，提问者需要评估生成的答案的质量，并决定是否需要进一步完善提问的问题。以下是一般的步骤：</p>
+<ol>
+<li>查看答案的准确性：提问者需要检查模型生成的答案是否与问题相关并且是否准确。</li>
+<li>查看答案的清晰度：提问者需要检查答案是否易于理解。如果答案使用专业词汇或难以理解的语言，提问者可以通过提供更多的上下文信息或使用更简单的语言来帮助模型更好地理解问题。</li>
+<li>查看答案的完备性：提问者需要确定模型生成的答案是否完整，并针对回答是否遗漏了某些方面进行修正。</li>
+<li>比较多个答案：如果模型生成了多个答案，提问者需要比较这些答案并决定哪个答案最相关、最准确。在处理复杂问题时，一般需要检查多个答案才能获得完整的信息。</li>
+<li>重新评估原问题：如果模型无法生成准确的答案，提问者需要重新评估原始问题，以确定问题是否有足够信息让模型作出回答。评估问题和提供更详细信息可以提高模型生成的答案的质量。</li>
+</ol>
+<h2 id="（五）反复提问直至获得满意的答案"><a href="#（五）反复提问直至获得满意的答案" class="headerlink" title="（五）反复提问直至获得满意的答案"></a>（五）反复提问直至获得满意的答案</h2><ol>
+<li>补充提问：如果提问者对已获得的答案不满意，则可修改或补充问题，并再次尝试输入到模型中。</li>
+<li>再次获得答案：提问者再次对获得的答案进行评估。</li>
+<li>重复前述两个步骤：如果仍然不满意答案，提问者需要重复提问，直到获得自己满意的答案为止。</li>
+</ol>
+<h1 id="四、问题-x2F-命令示例"><a href="#四、问题-x2F-命令示例" class="headerlink" title="四、问题&#x2F;命令示例"></a>四、问题&#x2F;命令示例</h1><h2 id="（一）法律规范检索"><a href="#（一）法律规范检索" class="headerlink" title="（一）法律规范检索"></a>（一）法律规范检索</h2><h3 id="1-事件或行为可能涉及的法律规定"><a href="#1-事件或行为可能涉及的法律规定" class="headerlink" title="1. 事件或行为可能涉及的法律规定"></a>1. 事件或行为可能涉及的法律规定</h3><p>“某一事件（或者行为）是否涉及某种法律？”<br>“如果我在公共场合摆摊卖商品，是否需要申请许可证？”<br>“如果我与某人签订的合同没有明确约定条款，是否仍然有效？”<br>“如果某人在公共场合辱骂他人，涉及到哪些法律规定？”</p>
+<h3 id="2-法律的具体规定、背景信息等"><a href="#2-法律的具体规定、背景信息等" class="headerlink" title="2. 法律的具体规定、背景信息等"></a>2. 法律的具体规定、背景信息等</h3><p>“某一法律规定的具体条款是什么？”<br>“依据《民法典》，有关合同有效期的具体规定是什么？”<br>“某项法律的出台背景和原因是什么？”<br>“《网络安全法》的出台背景和原因是什么？”<br>“某项法律的适用范围是什么？”<br>“《反垄断法》规定的适用范围包括哪些领域或行业？”</p>
+<h3 id="3-对某一法律条文的理解"><a href="#3-对某一法律条文的理解" class="headerlink" title="3. 对某一法律条文的理解"></a>3. 对某一法律条文的理解</h3><p>“请问根据《中华人民共和国合同法》，当事人可以按照约定或者交易习惯确定合同的履行期限。这里所指的交易习惯具体包含哪些方面？”<br>“请问根据《中华人民共和国劳动合同法》，用人单位应当为劳动者缴纳社会保险费用。这里的社会保险费用具体包括哪些方面？”<br>“如何理解：食品不符合食品安全标准，消费者主张生产者或者经营者依据食品安全法第一百四十八条第二款规定承担惩罚性赔偿责任，生产者或者经营者以未造成消费者人身损害为由抗辩的，人民法院不予支持”</p>
+<h3 id="4-对法律规范的检索结果列出相应的链接"><a href="#4-对法律规范的检索结果列出相应的链接" class="headerlink" title="4. 对法律规范的检索结果列出相应的链接"></a>4. 对法律规范的检索结果列出相应的链接</h3><p>“请为我检索法律规范相关的链接”或者：”能否给我提供有关法律法规的相关链接？”<br>“请为我检索中华人民共和国的劳动法相关的链接。”<br>“能否提供有关商标保护的法律法规链接？”<br>“我需要了解有关消费者权益保护的法律法规，请为我提供相关链接。”<br>“可否提供有关婚姻家庭和继承方面的法律法规链接？”<br>“请为我提供有关企业注销的法律法规链接。”</p>
+<h2 id="（二）法律文本处理"><a href="#（二）法律文本处理" class="headerlink" title="（二）法律文本处理"></a>（二）法律文本处理</h2><h3 id="1-制作合同模板"><a href="#1-制作合同模板" class="headerlink" title="1. 制作合同模板"></a>1. 制作合同模板</h3><p>“可否提供一份针对房屋租赁的合同模板？我需要制作一份短期租赁协议，希望该合同能够包含租赁期限、月租金、默认违约金等条款。”<br>“我想与一家汽车代理商进行交易，需要一份汽车购买协议的合同模板，其中需要包括车型、售价、交付时间、保修期等详细信息。”<br>“可否提供一份定制的婚前财产协议模板，以满足我的个人需要？我想要包括预婚资产、财产分配、离婚解除协议等内容。”<br>“我要为公司与另一家企业签订一份商业合作协议，可以提供一份模板或建议，其中需要包括责任、保密、合同期限等方面的条款。”<br>“我想雇佣某位独立承包商为我工作，需要一份合同模板，以明确雇员与雇主之间的义务和责任，包括报酬、工期、保密等方面的条款。”<br>“可否提供一个产品供应商合同模板，以满足我们的公司需要？其中需要明确产品规格、交货时间、价格等内容。”<br>“我需要雇佣员工，希望能够提供一份简单易懂、合法有效的雇佣合同模板，其中需要包括工作职责、工资、福利、辞退通知期等方面的内容。”<br>“我想与一位艺术家合作制作一件作品，需要一份合同模板，以明确作品的主题、形式、规格、版权等方面的条款。”<br>“我的公司需要承包一家网络安全服务商提供服务，需要一份网络安全服务合同模板，以明确双方的义务和责任，包括服务种类、服务期限、服务费用等方面的条款。”<br>“可否提供一份非盈利组织和捐赠者签署合同的模板，以保护组织和捐赠者的利益？其中需要包括捐款金额、用途、公示等方面的条款。”</p>
+<h3 id="2-编写合同条款或其他法律表述"><a href="#2-编写合同条款或其他法律表述" class="headerlink" title="2. 编写合同条款或其他法律表述"></a>2. 编写合同条款或其他法律表述</h3><p>“请编写一条关于解除劳动合同的特殊情况约定，当雇员因突发事件无法履行合同义务时如何处理。场景：雇员在合同期内不幸遭遇事故导致双腿瘫痪，无法再从事原职工作。”<br>“请编写一条关于产品质量保证的约定，阐述供应商应如何负责确保供应的产品符合合同要求。场景：供应商与采购方签署合同，提供某种机器设备。”<br>“请编写一条关于个人信息保护的约定，说明如何保护受托方收集到的个人敏感信息。场景：银行服务合同中涉及到客户的身份信息和资产状况等隐私信息。”<br>“请编写一条关于出租房屋的条款，保证租户按时缴纳租金并维护房屋及设施的约定。场景：业主将其房屋出租给租户，签署房屋租赁合同。”<br>“请编写一条关于商业机密保护的法律条款，阐述如何保护公司机密信息并禁止员工披露公司机密。场景：某科技公司与员工签署雇佣合同，员工需要签署保密协议。”</p>
+<h3 id="3-生成文档摘要"><a href="#3-生成文档摘要" class="headerlink" title="3. 生成文档摘要"></a>3. 生成文档摘要</h3><p>生成案件事实摘要、编写法律文书中的事实部分<br>“请按照以下事实，为某起交通事故案件编写摘要和对应法律文书的事实部分：案发时间、地点、当事人姓名、车辆情况、事故经过、事故原因、损失情况等。”<br>“希望您可以为一起涉及农村土地纠纷的案件生成事实摘要和事实部分，内容包括土地的具体位置、所有人信息、使用情况，争端的缘由和过程等。”<br>“需要您为一份涉及人身伤害的民事案件生成摘要和事实部分，包括原告、被告信息，事件发生时间、地点，当事人受伤情况，诊治情况，损失赔偿等内容。”<br>“请为一起涉及违约金的商业合同纠纷案件编写案件事实摘要和相应项目的事实情况，包括合同签订时间、签订双方信息、违约情况、违约金数额计算、相关证据等。”<br>“请您根据某起婚姻继承案件的事实，为该案件编写事实部分，包括当事人之间的亲属关系、家庭成员信息，被继承人的财产状况及分配情况，继承过程中的争议与解除等内容。”</p>
+<h3 id="4-法律文档翻译"><a href="#4-法律文档翻译" class="headerlink" title="4. 法律文档翻译"></a>4. 法律文档翻译</h3><p>“有一份涉及公司商业合同的英文文档需要翻译成中文，涉及到商业条款、价格、产品标准等内容，请问能否提供相关的翻译服务？”<br>“需要翻译一份关于跨境婚姻继承纠纷的文档，文件中包括个人信息、财产分配、遗产继承等关键信息，请问是否能提供相关翻译服务？”<br>“请将以下内容翻译成符合美国法律表述的英语：食品不符合食品安全标准，消费者主张生产者或者经营者依据食品安全法第一百四十八条第二款规定承担惩罚性赔偿责任，生产者或者经营者以未造成消费者人身损害为由抗辩的，人民法院不予支持。”</p>
+<h2 id="（三）法律案件处理"><a href="#（三）法律案件处理" class="headerlink" title="（三）法律案件处理"></a>（三）法律案件处理</h2><h3 id="1-案件事实描述"><a href="#1-案件事实描述" class="headerlink" title="1. 案件事实描述"></a>1. 案件事实描述</h3><p>“请用法律术语描述一起劳动纠纷案件中，被告单位因违反劳动合同条款，导致原告无法按时领取工资的具体情况。具体情形为：王三与天天公司签了合同，其中第五条约定了每月五日发工资5000元，但是天天公司每月10日才发工资，并且只发四千元，还剩一千元暂扣至半年才发一次。”</p>
+<h3 id="2-案件争议焦点总结"><a href="#2-案件争议焦点总结" class="headerlink" title="2. 案件争议焦点总结"></a>2. 案件争议焦点总结</h3><p>“请总结一起婚姻纠纷案件中，原告认为被告存在家庭暴力行为，被告认为原告在婚姻中有外遇、不负责任的情况下，争议焦点是什么？”<br>“对于一起消费者权益保护案件，原告认为被告销售的商品存在质量问题，被告认为原告在购买商品后未按照说明书使用，争议焦点是什么？”<br>“请总结以下案件的争议焦点：王三与天天公司签了合同，其中第五条约定了每月五日发工资5000元，但是天天公司每月10日才发工资，并且只发四千元，还剩一千元暂扣至半年才发一次，王三不服。”</p>
+<h3 id="3-法律关系分析"><a href="#3-法律关系分析" class="headerlink" title="3. 法律关系分析"></a>3. 法律关系分析</h3><p>“A与B签订了购房合同，但是B迟迟没有办理房产证，A想要解除合同，此时双方的法律关系是什么？”<br>“一家公司向另一家公司借了一笔贷款，但是没有按期还款，此时两家公司之间的法律关系是什么？”<br>“请分析以下案件的法律关系：王三与天天公司签了合同，其中第五条约定了每月五日发工资5000元，但是天天公司每月10日才发工资，并且只发四千元，还剩一千元暂扣至半年才发一次，王三不服，遂申请劳动仲裁。”</p>
+<h3 id="4-法律风险分析"><a href="#4-法律风险分析" class="headerlink" title="4. 法律风险分析"></a>4. 法律风险分析</h3><p>“我正在考虑与某公司合作，该公司要求我提供一些敏感信息，但我担心这些信息被滥用或泄露，请问存在哪些法律风险”<br>“请问天天公司在这个案件中存在怎样的法律风险：王三与天天公司签了合同，其中第五条约定了每月五日发工资5000元，但是天天公司每月10日才发工资，并且只发四千元，还剩一千元暂扣至半年才发一次，王三不服，遂申请劳动仲裁。”</p>
+<h3 id="5-法律措施建议"><a href="#5-法律措施建议" class="headerlink" title="5. 法律措施建议"></a>5. 法律措施建议</h3><p>“我发现我的合作伙伴在未经我的允许下抄袭了我的商标，并在市场上销售类似产品，我该采取什么法律措施呢？”<br>“我发现我的雇员在公司内部泄露了商业机密，我该采取什么法律措施呢？”<br>“我和另一家公司签署了一份合同，但对方一直未按照协议履行义务，我该采取什么法律措施呢？”<br>“请问能否给王三提出法律措施建议：王三与天天公司签了合同，其中第五条约定了每月五日发工资5000元，但是天天公司每月10日才发工资，并且只发四千元，还剩一千元暂扣至半年才发一次，王三不服，遂申请劳动仲裁。”</p>
+<h3 id="6-判决建议"><a href="#6-判决建议" class="headerlink" title="6. 判决建议"></a>6. 判决建议</h3><p>“如果你是法院审判人员，请针对以下案例提供判决建议，应至少包含查明的事实、本院认为、判决内容这三个部分：王三与天天公司签了合同，其中第五条约定了每月五日发工资5000元，但是天天公司每月10日才发工资，并且只发四千元，还剩一千元暂扣至半年才发一次，王三不服，遂申请劳动仲裁。”</p>
+<h3 id="7-法律援助"><a href="#7-法律援助" class="headerlink" title="7. 法律援助"></a>7. 法律援助</h3><p>“我签订的租房合同到期了，但是房东不肯退还我的押金，请问我该如何维护自己的权益？”<br>“我的劳动合同已经到期，但是公司未给我支付最后一个月的工资，请问我该如何维权？”</p>
+<h2 id="（四）其他辅助工作"><a href="#（四）其他辅助工作" class="headerlink" title="（四）其他辅助工作"></a>（四）其他辅助工作</h2><h3 id="1-尽调帮助"><a href="#1-尽调帮助" class="headerlink" title="1. 尽调帮助"></a>1. 尽调帮助</h3><p>“我计划购买一家小型公司的股权，想要了解其历史经营情况、财务数据和员工情况等，该如何进行尽调？”<br>“我想要投资一个地产项目，但在此之前希望能够对开发商进行尽调，以确认其资历、信用和开发能力等情况，应该如何进行尽调？”</p>
+<h3 id="2-语句检查"><a href="#2-语句检查" class="headerlink" title="2. 语句检查"></a>2. 语句检查</h3><p>对语句中是否存在语法、拼写、语义、标点符号等错误进行检查。<br>“我正在准备一份简历，希望您能够检查一下我的语法和拼写是否正确。”<br>“我正在撰写一封感谢信，但是担心自己的表达不够清晰，因此需要您来帮助我检查语法和用词是否得当。”</p>
+<h3 id="3-撰写非法律性的文本："><a href="#3-撰写非法律性的文本：" class="headerlink" title="3. 撰写非法律性的文本："></a>3. 撰写非法律性的文本：</h3><h4 id="3-1-电子邮件"><a href="#3-1-电子邮件" class="headerlink" title="3.1 电子邮件"></a>3.1 电子邮件</h4><p>“我想给团队成员发送一封电子邮件，通知他们即将开始的会议的时间、日期和地点。您能给我一些电子邮件模板或建议吗？”<br>“我是一名律师，我要向客户回复一封邮件，内容为：客户向我咨询的关于工资未按照劳动合同约定时间支付的法律问题，我已制作详细的法律意见书，详见附件。请为我提供一个模板”</p>
+<h4 id="3-2-各种行政事务文本，如请假、通知"><a href="#3-2-各种行政事务文本，如请假、通知" class="headerlink" title="3.2 各种行政事务文本，如请假、通知"></a>3.2 各种行政事务文本，如请假、通知</h4><p>请假申请：”我准备在下个星期二去看医生，并需要请一天假，请为我提供一份请假申请模板。”<br>例假通知：”我需要向我的直接领导和团队成员通知我年假时间的安排，请为我提供一份例假通知文本。”<br>加班申请：”我要申请加班，并需要提供正式的申请文件，请为我提供一份加班申请模板，应包括原因、时间和补偿等内容。”<br>离职通知：”我正在考虑离职，并需要向我的直接领导递交正式的离职通知，请提供一份离职通知模板。”<br>转岗申请：”我现在的工作任务已完成，我想要向我的直接领导提出转岗申请，请为我提供一份转岗申请模板。”</p>
+<h4 id="3-3-工作报告"><a href="#3-3-工作报告" class="headerlink" title="3.3 工作报告"></a>3.3 工作报告</h4><p>“作为团队领导，每月我需要向高层提交关于项目进展的工作报告，请您提供一些撰写这样的报告的模板。我们是法律团队，每个月的工作分为诉讼、合同、广告审查、咨询处理四个方面。”</p>
+<h4 id="3-4-备忘录、会议纪要"><a href="#3-4-备忘录、会议纪要" class="headerlink" title="3.4 备忘录、会议纪要"></a>3.4 备忘录、会议纪要</h4><p>“我需要写一份备忘录通知团队下周的会议时间和地点，请您提供模板，同时请给我建议如何让备忘录更加清晰明了。”<br>“我参加了一场公司的战略规划会议，需要写一份会议纪要。请您提供模板，并给我一些建议，如何组织和汇总会议记录。”</p>
+<h4 id="3-5-评论"><a href="#3-5-评论" class="headerlink" title="3.5 评论"></a>3.5 评论</h4><p>“你能否对这篇关于人工智能的文章发表一下你的看法？我认为它对 AI 技术的应用做了很好的介绍，但是也有一些缺点，想听你的观点。”<br>“你能否分享一下你对这篇关于气候变化的文章的看法？它引用了很多数据和研究结果，但是也有一些观点颇受争议，我想听听你的看法。”</p>
+<h4 id="3-6-宣传材料"><a href="#3-6-宣传材料" class="headerlink" title="3.6 宣传材料"></a>3.6 宣传材料</h4><p>“我正在为我的新律所制作宣传材料，你能给我一些开发宣传材料的灵感吗？我想要展示我们律所的产品和服务，同时也希望让宣传材料简洁明了。”</p>
+<h4 id="3-7-培训材料"><a href="#3-7-培训材料" class="headerlink" title="3.7 培训材料"></a>3.7 培训材料</h4><p>“我正在为内部员工的劳动用工法律培训制作材料，你有什么建议？能否提供培训大纲？我需要制作一些能够帮助员工理解特定法律领域的课程材料，这些材料需要简洁明了，面向不具备专业法律知识的读者。”</p>
+<h4 id="3-8-操作手册"><a href="#3-8-操作手册" class="headerlink" title="3.8 操作手册"></a>3.8 操作手册</h4><p>“我是律所的一名管理人员，我想制作一份关于诉讼案件处理标准化的操作手册，您能否提供流程和步骤”</p>
+<h2 id="（五）如何提问"><a href="#（五）如何提问" class="headerlink" title="（五）如何提问"></a>（五）如何提问</h2><p>如果不知道某一问题如何向ChatGPT提问，可就问题本身向ChatGPT提问：<br>“如果我要问ChatGPT：【问题的概述】。我应该怎么提问，请提供示例，示例应尽量具体详细，问题的示例需要描述具体的场景。”</p>
+<h1 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a>五、注意事项</h1><h2 id="（一）避免依赖ChatGPT解决敏感或复杂问题"><a href="#（一）避免依赖ChatGPT解决敏感或复杂问题" class="headerlink" title="（一）避免依赖ChatGPT解决敏感或复杂问题"></a>（一）避免依赖ChatGPT解决敏感或复杂问题</h2><p>虽然ChatGPT是一种高效的自然语言处理工具，但不可以过度依赖：<br>首先，如果问题涉及敏感信息，应该避免使用ChatGPT。因为这种工具无法判断问题是否存在敏感信息，而且这些信息可能被保存下来，导致机密信息泄漏。<br>其次，如果问题越来越复杂或者涉及更多的主观判断，ChatGPT的回答可能并不够满足需求。尽管ChatGPT可以提供很好的答案和建议，但是这些回答基于它已经学习到的语言模型。这就意味着回答内容受限于其未知数据和样本范围，可能没有足够的细节和深入分析。<br>最后，如果问题涉及重要的决策或动作，提问者应该特别小心。ChatGPT的回答只是一个参考，在决策和策略的考虑中需要注意各种因素以及可能的后果。<br>简而言之，使用ChatGPT时，提问者应该将其视为辅助工具，而不是唯一的决策依据。</p>
+<h2 id="（二）确保问题、答案和记录的保密性"><a href="#（二）确保问题、答案和记录的保密性" class="headerlink" title="（二）确保问题、答案和记录的保密性"></a>（二）确保问题、答案和记录的保密性</h2><p>对于法律工作者而言，保护客户的隐私和保密数据的安全至关重要。法律工作者需要意识到使用ChatGPT可能会泄露敏感的客户数据，例如商业秘密、银行账户信息等等。因此，应该避免在ChatGPT中直接提交敏感数据。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ChatGPT/" rel="tag"># ChatGPT</a>
+              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8C%87%E5%8D%97/" rel="tag"># 提问指南</a>
+              <a href="/tags/%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1/" rel="tag"># 法律服务</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/02/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E8%A7%86%E8%A7%92%E4%B8%8B%E7%9A%84%E6%B3%95%E5%AE%9A%E4%B9%89%E2%80%94%E2%80%94%E8%AF%BB%E3%80%8A%E6%B3%95%E5%BE%8B%E7%A4%BE%E4%BC%9A%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E3%80%8B/" rel="prev" title="社会学视角下的法定义——读《法律社会学基本原理》">
+      <i class="fa fa-chevron-left"></i> 社会学视角下的法定义——读《法律社会学基本原理》
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%98%85%E8%AF%BB%E5%89%8D%E7%9A%84%E9%87%8D%E8%A6%81%E6%8F%90%E9%86%92%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">阅读前的重要提醒：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%8C%87%E5%8D%97"><span class="nav-number">2.</span> <span class="nav-text">一、关于本指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E4%BB%80%E4%B9%88%E6%98%AFChatGPT"><span class="nav-number">2.1.</span> <span class="nav-text">（一）什么是ChatGPT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89ChatGPT%E5%8F%AF%E4%BB%A5%E4%B8%BA%E5%BE%8B%E5%B8%88-x2F-%E6%B3%95%E5%8A%A1%E5%B7%A5%E4%BD%9C%E6%8F%90%E4%BE%9B%E4%BB%80%E4%B9%88%E5%B8%AE%E5%8A%A9"><span class="nav-number">2.2.</span> <span class="nav-text">（二）ChatGPT可以为律师&#x2F;法务工作提供什么帮助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E6%9C%AC%E6%8C%87%E5%8D%97%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="nav-number">2.3.</span> <span class="nav-text">（三）本指南的目的</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%8F%90%E9%97%AE%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87"><span class="nav-number">3.</span> <span class="nav-text">二、提问前的准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89ChatGPT%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E9%99%90%E5%88%B6"><span class="nav-number">3.1.</span> <span class="nav-text">（一）ChatGPT的功能与限制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ChatGPT%E7%9A%84%E5%8A%9F%E8%83%BD%EF%BC%9A"><span class="nav-number">3.1.1.</span> <span class="nav-text">ChatGPT的功能：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ChatGPT%E7%9A%84%E9%99%90%E5%88%B6%EF%BC%9A"><span class="nav-number">3.1.2.</span> <span class="nav-text">ChatGPT的限制：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%B6%E5%AE%9A%E5%85%B7%E4%BD%93%E7%9A%84%E9%97%AE%E9%A2%98%E5%B9%B6%E5%B0%BD%E5%8F%AF%E8%83%BD%E6%98%8E%E7%A1%AE"><span class="nav-number">3.2.</span> <span class="nav-text">（二）制定具体的问题并尽可能明确</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%8F%90%E9%97%AE%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">三、提问的流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%B3%A8%E5%86%8C%E5%92%8C%E7%99%BB%E5%BD%95ChatGPT%E8%B4%A6%E5%8F%B7"><span class="nav-number">4.1.</span> <span class="nav-text">（一）注册和登录ChatGPT账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E6%A8%A1%E5%9E%8B%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">（二）选择合适的模型和设置参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E8%BE%93%E5%85%A5%E9%97%AE%E9%A2%98%E5%B9%B6%E7%AD%89%E5%BE%85%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E7%AD%94%E6%A1%88"><span class="nav-number">4.3.</span> <span class="nav-text">（三）输入问题并等待模型生成答案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E8%AF%84%E4%BC%B0%E7%AD%94%E6%A1%88%E7%9A%84%E8%B4%A8%E9%87%8F%E5%B9%B6%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AE%8C%E5%96%84%E9%97%AE%E9%A2%98"><span class="nav-number">4.4.</span> <span class="nav-text">（四）评估答案的质量并进一步完善问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E5%8F%8D%E5%A4%8D%E6%8F%90%E9%97%AE%E7%9B%B4%E8%87%B3%E8%8E%B7%E5%BE%97%E6%BB%A1%E6%84%8F%E7%9A%84%E7%AD%94%E6%A1%88"><span class="nav-number">4.5.</span> <span class="nav-text">（五）反复提问直至获得满意的答案</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%97%AE%E9%A2%98-x2F-%E5%91%BD%E4%BB%A4%E7%A4%BA%E4%BE%8B"><span class="nav-number">5.</span> <span class="nav-text">四、问题&#x2F;命令示例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%B3%95%E5%BE%8B%E8%A7%84%E8%8C%83%E6%A3%80%E7%B4%A2"><span class="nav-number">5.1.</span> <span class="nav-text">（一）法律规范检索</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BA%8B%E4%BB%B6%E6%88%96%E8%A1%8C%E4%B8%BA%E5%8F%AF%E8%83%BD%E6%B6%89%E5%8F%8A%E7%9A%84%E6%B3%95%E5%BE%8B%E8%A7%84%E5%AE%9A"><span class="nav-number">5.1.1.</span> <span class="nav-text">1. 事件或行为可能涉及的法律规定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B3%95%E5%BE%8B%E7%9A%84%E5%85%B7%E4%BD%93%E8%A7%84%E5%AE%9A%E3%80%81%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF%E7%AD%89"><span class="nav-number">5.1.2.</span> <span class="nav-text">2. 法律的具体规定、背景信息等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AF%B9%E6%9F%90%E4%B8%80%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87%E7%9A%84%E7%90%86%E8%A7%A3"><span class="nav-number">5.1.3.</span> <span class="nav-text">3. 对某一法律条文的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%AF%B9%E6%B3%95%E5%BE%8B%E8%A7%84%E8%8C%83%E7%9A%84%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C%E5%88%97%E5%87%BA%E7%9B%B8%E5%BA%94%E7%9A%84%E9%93%BE%E6%8E%A5"><span class="nav-number">5.1.4.</span> <span class="nav-text">4. 对法律规范的检索结果列出相应的链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E6%B3%95%E5%BE%8B%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="nav-number">5.2.</span> <span class="nav-text">（二）法律文本处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%B6%E4%BD%9C%E5%90%88%E5%90%8C%E6%A8%A1%E6%9D%BF"><span class="nav-number">5.2.1.</span> <span class="nav-text">1. 制作合同模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%BC%96%E5%86%99%E5%90%88%E5%90%8C%E6%9D%A1%E6%AC%BE%E6%88%96%E5%85%B6%E4%BB%96%E6%B3%95%E5%BE%8B%E8%A1%A8%E8%BF%B0"><span class="nav-number">5.2.2.</span> <span class="nav-text">2. 编写合同条款或其他法律表述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E6%91%98%E8%A6%81"><span class="nav-number">5.2.3.</span> <span class="nav-text">3. 生成文档摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%B3%95%E5%BE%8B%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91"><span class="nav-number">5.2.4.</span> <span class="nav-text">4. 法律文档翻译</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E6%B3%95%E5%BE%8B%E6%A1%88%E4%BB%B6%E5%A4%84%E7%90%86"><span class="nav-number">5.3.</span> <span class="nav-text">（三）法律案件处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%A1%88%E4%BB%B6%E4%BA%8B%E5%AE%9E%E6%8F%8F%E8%BF%B0"><span class="nav-number">5.3.1.</span> <span class="nav-text">1. 案件事实描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%A1%88%E4%BB%B6%E4%BA%89%E8%AE%AE%E7%84%A6%E7%82%B9%E6%80%BB%E7%BB%93"><span class="nav-number">5.3.2.</span> <span class="nav-text">2. 案件争议焦点总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90"><span class="nav-number">5.3.3.</span> <span class="nav-text">3. 法律关系分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%B3%95%E5%BE%8B%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90"><span class="nav-number">5.3.4.</span> <span class="nav-text">4. 法律风险分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%B3%95%E5%BE%8B%E6%8E%AA%E6%96%BD%E5%BB%BA%E8%AE%AE"><span class="nav-number">5.3.5.</span> <span class="nav-text">5. 法律措施建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%88%A4%E5%86%B3%E5%BB%BA%E8%AE%AE"><span class="nav-number">5.3.6.</span> <span class="nav-text">6. 判决建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E6%B3%95%E5%BE%8B%E6%8F%B4%E5%8A%A9"><span class="nav-number">5.3.7.</span> <span class="nav-text">7. 法律援助</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E5%85%B6%E4%BB%96%E8%BE%85%E5%8A%A9%E5%B7%A5%E4%BD%9C"><span class="nav-number">5.4.</span> <span class="nav-text">（四）其他辅助工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%B0%BD%E8%B0%83%E5%B8%AE%E5%8A%A9"><span class="nav-number">5.4.1.</span> <span class="nav-text">1. 尽调帮助</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%AF%AD%E5%8F%A5%E6%A3%80%E6%9F%A5"><span class="nav-number">5.4.2.</span> <span class="nav-text">2. 语句检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%92%B0%E5%86%99%E9%9D%9E%E6%B3%95%E5%BE%8B%E6%80%A7%E7%9A%84%E6%96%87%E6%9C%AC%EF%BC%9A"><span class="nav-number">5.4.3.</span> <span class="nav-text">3. 撰写非法律性的文本：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6"><span class="nav-number">5.4.3.1.</span> <span class="nav-text">3.1 电子邮件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-%E5%90%84%E7%A7%8D%E8%A1%8C%E6%94%BF%E4%BA%8B%E5%8A%A1%E6%96%87%E6%9C%AC%EF%BC%8C%E5%A6%82%E8%AF%B7%E5%81%87%E3%80%81%E9%80%9A%E7%9F%A5"><span class="nav-number">5.4.3.2.</span> <span class="nav-text">3.2 各种行政事务文本，如请假、通知</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A"><span class="nav-number">5.4.3.3.</span> <span class="nav-text">3.3 工作报告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E5%A4%87%E5%BF%98%E5%BD%95%E3%80%81%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81"><span class="nav-number">5.4.3.4.</span> <span class="nav-text">3.4 备忘录、会议纪要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-%E8%AF%84%E8%AE%BA"><span class="nav-number">5.4.3.5.</span> <span class="nav-text">3.5 评论</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-%E5%AE%A3%E4%BC%A0%E6%9D%90%E6%96%99"><span class="nav-number">5.4.3.6.</span> <span class="nav-text">3.6 宣传材料</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-%E5%9F%B9%E8%AE%AD%E6%9D%90%E6%96%99"><span class="nav-number">5.4.3.7.</span> <span class="nav-text">3.7 培训材料</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-8-%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C"><span class="nav-number">5.4.3.8.</span> <span class="nav-text">3.8 操作手册</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E5%A6%82%E4%BD%95%E6%8F%90%E9%97%AE"><span class="nav-number">5.5.</span> <span class="nav-text">（五）如何提问</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">6.</span> <span class="nav-text">五、注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E9%81%BF%E5%85%8D%E4%BE%9D%E8%B5%96ChatGPT%E8%A7%A3%E5%86%B3%E6%95%8F%E6%84%9F%E6%88%96%E5%A4%8D%E6%9D%82%E9%97%AE%E9%A2%98"><span class="nav-number">6.1.</span> <span class="nav-text">（一）避免依赖ChatGPT解决敏感或复杂问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E7%A1%AE%E4%BF%9D%E9%97%AE%E9%A2%98%E3%80%81%E7%AD%94%E6%A1%88%E5%92%8C%E8%AE%B0%E5%BD%95%E7%9A%84%E4%BF%9D%E5%AF%86%E6%80%A7"><span class="nav-number">6.2.</span> <span class="nav-text">（二）确保问题、答案和记录的保密性</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">积成</p>
+  <div class="site-description" itemprop="description">一个不断学习者的小博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:zh-xx@foxmail.com" title="E-Mail → mailto:zh-xx@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">积成</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
